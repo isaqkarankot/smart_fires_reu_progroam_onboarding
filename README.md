@@ -266,4 +266,4 @@ This schedule will be updated here soon.
 ---
 
 *README maintained by Mahmad Isaq Karankot · BMW Lab · MSU*
-*Last updated: May 2026 · Questions? Email Isaq or open a GitHub issue.*
+*Last updated: May 2026 · Questions? Email Isaq.*
