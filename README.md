@@ -233,12 +233,6 @@ These are the core libraries used in BMW Lab work. You will install additional o
 | `requests` | API calls |
 | `python-dotenv` | Loading `.env` credential files |
 
-> Install the environment using the `environment.yml` in the repo:
-> ```bash
-> conda env create -f environment.yml
-> conda activate smartfires
-> ```
-
 ---
 
 ## 9. Meetings & Schedule
