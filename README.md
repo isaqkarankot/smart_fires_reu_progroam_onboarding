@@ -67,18 +67,20 @@ Before starting your summer project, read the following work produced by the BMW
 
 ### Isaq — Band Selection & Hyperspectral Classification
 
-**Paper 1 (IEEE):**
-> Karankot, M. I. et al. — *[Band Selection for Hyperspectral Classification — Prescribed Fire Context]*
+**Paper 1 (IEEE MLSP 2025):**
+> Karankot, M. I. et al. — *[Attention and Edge-Aware Band Selection for Efficient Hyperspectral Classification of Burned Vegetation]*
 > 🔗 https://ieeexplore.ieee.org/abstract/document/11204320
+> Code Repo -- https://github.com/BMW-lab-MSU/SF_Prescibed_Fire_HSI
 
 **Paper 2 (MDPI Remote Sensing, 2026):**
 > Whitaker, B. M. et al. — *Hyperspectral Band Selection for Ground Fuel Classification for Prescribed Fires*
 > Remote Sensing, Vol. 18, Issue 9, p. 1440. DOI: [10.3390/rs18091440](https://doi.org/10.3390/rs18091440)
 > 🔗 https://www.mdpi.com/2072-4292/18/9/1440
+> > Code Repo -- https://github.com/BMW-lab-MSU/hyperspectral-feature-selection-prescribed-fires
 
 **Summary of Paper 2:** This study evaluates five dimensionality reduction strategies for hyperspectral imagery (PCA, SSEP, SRPA, DRL-based selection, and K-Means clustering) combined with classical and deep learning classifiers (RF, SVM, KNN, 3D-CNN). It includes evaluation on benchmark datasets (Indian Pines, Pavia University) and a new **real-world VNIR dataset collected after prescribed burns at Lubrecht Experimental Forest, Montana**. The goal is compact, informative spectral band subsets that improve classification while reducing computational cost.
 
-### Isaq — Fire Burn Mapping (Sentinel-2)
+### IGARSS 2026 Fire Burn Mapping (Sentinel-2)
 > Details and access shared via email. Contact Isaq if you haven't received it.
 
 ### Ethan — Thesis Work
