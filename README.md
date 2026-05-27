@@ -1,4 +1,4 @@
-# 🔥 SmartFires – REU Program · Summer 2026
+# SmartFires – REU Program · Summer 2026
 ### BMW Lab · Department of Electrical & Computer Engineering · Montana State University
 
 > **SMART FireS** — *Sensors, Machine Learning, and Artificial Intelligence in Real Time Fire Science*
@@ -21,7 +21,7 @@ Welcome to the BMW Lab's REU onboarding document. Read this top to bottom before
 8. [Key Python Libraries](#8-key-python-libraries)
 9. [Meetings & Schedule](#9-meetings--schedule)
 10. [Contacts](#10-contacts)
-11. [Code of Conduct & Best Practices](#11-code-of-conduct--best-practices)
+
 
 ---
 
@@ -37,7 +37,7 @@ The project spans multiple thrusts — sensor networks, AI/ML modeling, ecology,
 
 The **BMW Lab at MSU** is part of the **AI/ML thrust** within SmartFires. Our work focuses on:
 
-> *(Add 2–3 sentences describing the specific AI/ML objectives your lab is working on — e.g., hyperspectral image classification, ground fuel mapping, burn severity estimation, etc.)*
+> *(will update shortly)*
 
 Our contributions draw on airborne hyperspectral imagery, satellite multispectral data, and machine learning pipelines to support fire science decision-making.
 
@@ -45,7 +45,7 @@ Our contributions draw on airborne hyperspectral imagery, satellite multispectra
 
 ## 3. Understanding Prescribed Fire
 
-Prescribed (or "controlled") fire is the intentional, planned use of fire by land managers to reduce hazardous fuel loads, restore ecosystems, and improve forest health. Before diving into the technical work, you should understand the ecological and policy context. Read through the following:
+Prescribed (or "controlled") fire is the intentional, planned use of fire by land managers to reduce hazardous fuel loads, restore ecosystems, and improve forest health. Before diving into the technical work, you should understand the ecological and policy context. Read through the following link below to more detailed understanding of presribed fire or burns:
 
 | Resource | Description |
 |---|---|
@@ -57,7 +57,7 @@ Prescribed (or "controlled") fire is the intentional, planned use of fire by lan
 | [National Forests Foundation – What is Prescribed Fire?](https://www.nationalforests.org/article/what-is-prescribed-fire-and-why-is-it-important-for-forest-health/) | Accessible explainer on forest health rationale |
 | [NPS – What is a Prescribed Fire?](https://www.nps.gov/articles/what-is-a-prescribed-fire.htm) | National Park Service overview |
 
-**Goal:** After reading these, you should be able to explain *why* prescribed fires are conducted, *who* manages them in Montana, and *what ecological outcomes* they are intended to produce. This context directly motivates the remote sensing work we do.
+
 
 ---
 
@@ -101,9 +101,9 @@ Our primary dataset is **VNIR hyperspectral imagery** collected via drone/aircra
 | `VNIR` | Binary hyperspectral datacube (~97 GB) |
 | `segmented.png` | Ground truth mask — pixel labels: `1 = tree`, `2 = grass` |
 
-**Download link:** *(Add internal link or shared drive path here)*
+**Download link:** *(will update link shortly)*
 
-> ⚠️ **The VNIR binary is ~97 GB.** Do not attempt to load it entirely into RAM. Use tiled/windowed reading via `spectral` or `rasterio`. See the preprocessing notebooks for examples.
+> **The VNIR binary is ~97 GB.** Do not attempt to load it entirely into RAM. Use tiled/windowed reading via `spectral` or `rasterio`. See the preprocessing notebooks for examples.
 
 The data collection process and sensor specifications are documented in the two papers listed in Section 4.
 
@@ -117,7 +117,7 @@ We use **Sentinel-2 multispectral imagery** for fire burn mapping tasks. Access 
 - **GEE Python API (geemap):** https://geemap.org/
 - **GEE JavaScript Code Editor:** https://code.earthengine.google.com/
 
-**Satellite data download link:** *(Add link here once available)*
+**Satellite data download link:** *(will update link shortly)*
 
 ### 5.3 MTBS — Monitoring Trends in Burn Severity
 
@@ -191,6 +191,7 @@ Install everything below **before your start date**. Flag any issues to Isaq at 
 | VS Code *(or PyCharm — your choice)* | Latest | https://code.visualstudio.com/ |
 | QGIS | 3.x LTS | https://qgis.org/en/site/forusers/download.html |
 
+
 ### 7.2 Accounts to Set Up
 
 Request access by emailing Isaq **before your start date**:
@@ -206,8 +207,7 @@ Request access by emailing Isaq **before your start date**:
 - Python (Microsoft)
 - Pylance
 - Jupyter
-- GitLens
-- Rainbow CSV
+
 
 ---
 
@@ -243,21 +243,15 @@ These are the core libraries used in BMW Lab work. You will install additional o
 
 ### Weekly Meeting with Dr. Whitaker — Summer 2026
 
-> ⚠️ **Add these to your calendar immediately.**
+>  **Add these to your calendar immediately.**
 
 | Date | Time | Location |
 |---|---|---|
 | Fri, May 29 | 3:00 – 4:00 PM MST | Cobleigh Hall 630 |
 | *(subsequent Fridays — TBD)* | 3:00 – 4:00 PM MST | Cobleigh Hall 630 |
 
-This schedule will be updated here as dates are confirmed. Check back regularly.
+This schedule will be updated here soon.
 
-### Standup Format
-
-Come to each meeting ready to share:
-1. **Done** — What did you finish since last time?
-2. **Doing** — What are you working on now?
-3. **Blocked** — What is slowing you down? What do you need?
 
 ---
 
@@ -270,42 +264,8 @@ Come to each meeting ready to share:
 | Dr. Bradley Whitaker | Faculty Advisor | bradley.whitaker1@montana.edu | Cobleigh Hall 630 |
 | Mahmad Isaq Karankot | PhD Student / Mentor | mahmadisaq.karankot@student.montana.edu · mahmad.isaq@outlook.com | Cobleigh Hall 640 (BMW Lab) |
 
-> For day-to-day questions, technical help, and data access: **contact Isaq first.**
-> For research direction, progress check-ins, and formal matters: **contact Dr. Whitaker.**
 
----
 
-## 11. Code of Conduct & Best Practices
-
-### Git Workflow
-
-- **Never push directly to `main`.** Create a feature branch, then open a pull request.
-- Branch naming: `yourname/short-description` (e.g., `alex/ndvi-preprocessing`)
-- Write meaningful commit messages: `Add NDVI calculation to Sentinel-2 pipeline` — not `fix stuff`
-- Pull from `main` before starting each work session
-
-### Code Quality
-
-- Write docstrings for every function
-- Format code with `black` before committing
-- If a notebook exceeds ~200 lines of logic, move that logic into a `.py` module in `src/`
-- Add comments explaining *why*, not just *what*
-
-### Data Rules
-
-- **Raw data is read-only.** Never overwrite original files.
-- Never commit large data files or credentials to Git (`.env`, binary files, GeoTIFFs)
-- Document any new dataset you introduce (source, date downloaded, format)
-
-### Research Integrity
-
-- Report results honestly — failures and negative results are data too
-- Cite every dataset and paper you use
-- If you're unsure whether something is okay, ask before doing it
-
-### Inclusive Environment
-
-This REU is committed to a respectful, inclusive environment for all participants. Harassment of any kind is not tolerated. If you experience or witness a concern, bring it to Dr. Whitaker or consult [MSU reporting resources](https://www.montana.edu/titleix/).
 
 ---
 
