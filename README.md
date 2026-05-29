@@ -103,7 +103,7 @@ Our primary dataset is **VNIR hyperspectral imagery** collected via drone/aircra
 | `VNIR` | Binary hyperspectral datacube (~97 GB) |
 | `segmented.png` | Ground truth mask — pixel labels: `1 = tree`, `2 = grass` |
 
-**Download link:** *(will update link shortly)*
+**Download link:** https://montanaedu-my.sharepoint.com/:f:/g/personal/n51x164_student_montana_edu/IgB5Cjv8OEwDQbySxID42KqiATe-CP1Z3fcF2gVbPGrn-Ro?e=RBPIpT
 
 > **The VNIR binary is ~97 GB.** Do not attempt to load it entirely into RAM. Use tiled/windowed reading via `spectral` or `rasterio`. See the preprocessing notebooks for examples.
 
