@@ -269,4 +269,4 @@ These are the core libraries used in BMW Lab work. You will install additional o
 ---
 
 *README maintained by Mahmad Isaq Karankot · BMW Lab · MSU*
-*Last updated: May 2026 · Questions? Email Isaq.*
+*Last updated: June 2026 · Questions? Email Isaq.*
