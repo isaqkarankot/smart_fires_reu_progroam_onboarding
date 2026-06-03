@@ -244,9 +244,12 @@ These are the core libraries used in BMW Lab work. You will install additional o
 | Date | Time | Location |
 |---|---|---|
 | Fri, May 29 | 2:00 – 3:00 PM MST | Cobleigh Hall 630 |
-| *(subsequent Fridays — TBD)* | 3:00 – 4:00 PM MST | Cobleigh Hall 630 |
+| Fri, June 05 | 1:30 – 2:30 PM MST | Cobleigh Hall 630 |
+| Wed, June 10 | 3:00 – 4:00 PM MST | Cobleigh Hall 630 |
+| Tue, June 16 | 11:00 – 12:00 PM MST | Cobleigh Hall 630 |
+| Mon, June 22 | 12:00PM – 1:00 PM MST | Cobleigh Hall 630 |
+| Tue, June 30 | 11:00 – 12:00 PM MST | Cobleigh Hall 630 |
 
-This schedule will be updated here soon.
 
 
 ---
